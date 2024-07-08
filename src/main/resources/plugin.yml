@@ -1,0 +1,16 @@
+name: JoinMessage
+version: 1.0.0
+main: me.shuji.joinmessage
+author: Shuji
+description: Simple plugin for changing joinmessage and sending a message to player
+
+commands:
+ jmreload:
+  description: Reloads the TelegramBridge configuration
+  usage: /jmreload
+  permission: joinmessage.commands.reload
+
+permissions:
+ joinmessage.commands.reload:
+  description: Allows the user to reload the JoinMessage configuration
+  default: op
