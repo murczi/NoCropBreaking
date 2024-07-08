@@ -42,14 +42,17 @@ public final class Main extends JavaPlugin implements Listener {
 	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent e) {
 		Player player = e.getPlayer();
-		e.joinMessage(Component.text(this.trans(String.format(config.getString("joinMessage").replace("{player}", player.getName())))));
-		player.sendMessage(this.trans(String.format(config.getString("messageToPlayer").replace("{player}", player.getName()))));
+		e.joinMessage(Component.text(trans(String.format(config.getString("joinMessage").replace("{player}", player.getName())))));
+		String[] s = config.getString("messageToPlayer").split("\n");
+		for (String m : s){
+			player.sendMessage(trans(String.format(m.replace("{player}", player.getName()))));
+		}
 	}
 
 	@EventHandler
 	public void onPlayerLeave(PlayerQuitEvent e) {
 		Player player = e.getPlayer();
-		e.quitMessage(Component.text(this.trans(String.format(config.getString("quitMessage").replace("{player}", player.getName())))));
+		e.quitMessage(Component.text(trans(String.format(config.getString("quitMessage").replace("{player}", player.getName())))));
 		console.info(player.getName() + " logged off at " + " X: " + player.getLocation().x() + " Y: " + player.getLocation().y() + " Z: " + player.getLocation().z());
 	}
 
