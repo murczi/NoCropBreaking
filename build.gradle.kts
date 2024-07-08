@@ -6,7 +6,7 @@ plugins {
 
 group = "me.shuji.joinmessage"
 version = "1.0.0"
-description = "joinmessage"
+description = "Simple plugin for changing joinmessage and sending a message to player"
 
 
 java {
