@@ -1,12 +1,14 @@
+api-version: '1.21'
 name: JoinMessage
 version: 1.0.0
-main: me.shuji.joinmessage
+main: me.shuji.joinmessage.Main
+load: STARTUP
 author: Shuji
 description: Simple plugin for changing joinmessage and sending a message to player
 
 commands:
  jmreload:
-  description: Reloads the TelegramBridge configuration
+  description: Reloads the configuration
   usage: /jmreload
   permission: joinmessage.commands.reload
 

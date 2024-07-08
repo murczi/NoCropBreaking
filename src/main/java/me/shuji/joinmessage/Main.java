@@ -26,7 +26,7 @@ public final class Main extends JavaPlugin implements Listener {
 	public void onEnable() {
 		console = getLogger();
 		setConfig();
-
+		instance = this;
 		if (config.getBoolean("enabled")) {
 			onDisable();
 		}
@@ -64,7 +64,7 @@ public final class Main extends JavaPlugin implements Listener {
 		config.addDefault("messageToPlayer", "Hello {player}");
 		config.addDefault("joinMessage", "{player} joined. o/");
 		config.addDefault("quitMessage", "{player} left. :c");
-		config.addDefault("configReloadedMessage", "§2Config Succesfully Reloaded!");
+		config.addDefault("configReloadedMessage", "&2Config Succesfully Reloaded!");
 		config.options().copyDefaults(true);
 		saveConfig();
 	}
