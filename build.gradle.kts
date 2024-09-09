@@ -4,9 +4,9 @@ plugins {
 	id("xyz.jpenilla.run-paper") version "2.3.0"
 }
 
-group = "me.shuji.joinmessage"
-version = "1.0.0"
-description = "Simple plugin for changing joinmessage and sending a message to player"
+group = "me.shuji.nobreakcrops"
+version = "1.0.2"
+description = "Simple plugin for keeping crops safe from breaking"
 
 
 java {

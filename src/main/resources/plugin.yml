@@ -1,18 +1,7 @@
 api-version: '1.21'
-name: JoinMessage
+name: NoBreakCrops
 version: 1.0.0
-main: me.shuji.joinmessage.Main
+main: me.shuji.nobreakcrops.Main
 load: STARTUP
 author: Shuji
-description: Simple plugin for changing joinmessage and sending a message to player
-
-commands:
- jmreload:
-  description: Reloads the configuration
-  usage: /jmreload
-  permission: joinmessage.commands.reload
-
-permissions:
- joinmessage.commands.reload:
-  description: Allows the user to reload the JoinMessage configuration
-  default: op
+description: Simple plugin for keeping crops safe from breaking
