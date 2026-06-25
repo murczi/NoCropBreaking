@@ -1,0 +1,6 @@
+name: NoBreakCrops
+version: '1.0.2'
+main: me.shuji.nobreakcrops.Main
+description: Simple plugin for keeping crops safe from breaking
+api-version: '1.21'
+author: Shuji
